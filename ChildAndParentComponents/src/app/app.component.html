@@ -1,0 +1,9 @@
+<app-child [data]="Name"></app-child>
+<button class="btn btn-warning"(click)="ChangeData()">Change Name</button>
+<app-child [MyDataArray]="fruits"></app-child>
+<app-child [MyDataObj]="Obj"></app-child>
+
+<!-- child2 workd -->
+
+<app-child2 (ChildEvent)="message=$event"></app-child2>
+<h2 class="text-success">{{message}}</h2>
